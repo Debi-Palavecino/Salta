@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import placeObject from "../Hook/placeObject"
+import placeObject from "../auxiliares/placeObject"
 
 
 // Import Swiper styles
@@ -14,7 +14,7 @@ import { EffectFade, Navigation, Pagination,Autoplay } from "swiper";
 import ContainerImage from "./containerImage";
 
 const Carrousel =()=> {
-  const [info]= placeObject()
+  
   return (
 
       <Swiper
@@ -32,13 +32,17 @@ const Carrousel =()=> {
         modules={[Autoplay,EffectFade, Navigation, Pagination]}
         className="mySwiper"
       >
-        {info.map(element=>{
+        {placeObject.map(element=>{
           return(
             <SwiperSlide><ContainerImage key={element.id} imagen={element.image}/></SwiperSlide>
 
           )
+          
         })}
+      
+        
     </Swiper>
-  );
+  )
+  
 }
 export default Carrousel

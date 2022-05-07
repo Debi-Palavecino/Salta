@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2? family= Ms+Madi & family= Playfair+Display:ital@1 & display=swap');
+.Container{
+    height: 6em;
+    width: 100%;
+}
+.logoSalta img{
+    margin-top: 5px;
+    width: 11em;
+    height: 5.5em;
+}
+.boxConteiner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+
+}
+.box{
+    height: 4em;
+    font-family: 'Ms Madi', cursive;
+    border-radius: 5px;
+    text-align: center;
+    width: 9em;
+    color: rgb(75, 7, 12);
+}
+
+
+.box:hover{
+    color: rgb(245, 245, 245);
+    background-color: rgb(75,7,12, 0.5);
+}

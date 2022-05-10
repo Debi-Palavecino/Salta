@@ -1,21 +1,16 @@
+import { Link } from "react-router-dom"
 import "../styles/NavStyle.css"
 
 const Nav = ({handleClickAbrirModal})=>{
     return(
         <div className="Container">
-            <div className="boxConteiner">
-                <div className="logoSalta">
+            <div className="logoSalta">
                     <img alt="Logo De Salta" src="http://turismosalta.gov.ar/images/logo-turismo-salta.png"/>
-                </div>
-                <div className="box">
-                    <h2>Places</h2>
-                </div>
-                <div className="box">
-                    <h2>What to do</h2>
-                </div>
-                <div onClick={handleClickAbrirModal} className="box">
-                    <h2>History</h2>
-                </div>
+            </div>
+            <div className="boxConteiner">
+                <button className="box"><Link style={{color:"black",}} className="link" to={"/Lugares"}>Places</Link></button>
+                <button className="box"><Link style={{color:"black",}} to={"/QueHacer"}>What to do</Link></button>
+                <button onClick={handleClickAbrirModal} className="box"><Link style={{color:"black",}} to={"/Historia"}>History</Link></button>
             </div>
         </div>
     )

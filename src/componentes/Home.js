@@ -6,6 +6,11 @@ const Home =()=>{
         <div>
             <Nav/>
             <Carrousel/>
+            <div>
+                <h1>
+                    Hola
+                </h1>
+            </div>
             
         </div>
     )

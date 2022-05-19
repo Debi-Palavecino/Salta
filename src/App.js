@@ -1,17 +1,8 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Historia from "./componentes/Historia";
-import Lugares from "./componentes/Lugares";
-import Home from "./componentes/Home";
+import Carrousel from "./componentes/Carrousel"
+
 const App =()=>{
   return(
-    <BrowserRouter>
-    
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Lugares" element={<Lugares />} />
-        <Route path="/Historia" element={<Historia />} />
-      </Routes>
-    </BrowserRouter>
+    <Carrousel/>
   )
 }
 export default App;

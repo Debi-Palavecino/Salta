@@ -1,13 +1,10 @@
-import Carrousel from "./Carrousel"
-
-import Nav from "./Nav";
-const Home =()=>{
+import Carrousel from './Carrousel'
+const Home = ()=>{
     return(
         <div>
-            <Nav/>
-            <Carrousel/>
-            
+            <Carrousel></Carrousel>
         </div>
+
     )
 }
 export default Home
